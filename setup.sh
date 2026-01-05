@@ -8,6 +8,9 @@ git clone --depth 1 https://github.com/thu-ml/SageAttention.git
 
 pip install ninja
 
+conda install -c conda-forge libffi=3.3 -y
+conda uninstall graalpy -y
+
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 \
   --index-url https://download.pytorch.org/whl/cu121
 
